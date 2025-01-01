@@ -1,0 +1,42 @@
+[project]
+name = "ai-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "boto3>=1.35.90",
+    "langchain-community>=0.3.13",
+    "langchain>=0.3.13",
+    "langsmith>=0.1.147",
+    "loguru>=0.7.3",
+    "openai>=1.55.2",
+    "pdfannots>=0.4",
+    "pdfplumber>=0.11.4",
+    "pydantic-settings>=2.7.0",
+    "pydantic[email]>=2.10.2",
+    "pymongo>=4.10.1",
+    "pymupdf>=1.24.11",
+    "pypdf>=5.1.0",
+    "python-dotenv>=1.0.1",
+    "ruff>=0.8.0",
+    "streamlit>=1.41.1",
+    "langchain-openai>=0.2.14",
+]
+
+[tool.ruff.lint]
+select = [
+  "E",    # pycodestyle errors
+  "W",    # pycodestyle warnings
+  "F",    # pyflakes
+  "UP",   # pyupgrade
+  "I",    # isort
+  "B",    # flake8-bugbear
+  "FURB", # refurb
+]
+extend-safe-fixes = ["F401", "E501"]
+ignore = [ "UP007", "B904" ]
+
+[tool.ruff.format]
+quote-style = "double"
+docstring-code-format = true
