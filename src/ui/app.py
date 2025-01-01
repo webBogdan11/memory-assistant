@@ -1,4 +1,10 @@
 import streamlit as st
+import sys
+import os
+
+
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+sys.path.append(project_root)
 
 
 def main():
@@ -28,4 +34,5 @@ def main():
 
 
 if __name__ == "__main__":
+    print(project_root)
     main()
