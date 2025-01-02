@@ -5,11 +5,11 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import streamlit as st
 from hmac import compare_digest
-import os
+from config import settings
 
 def check_password():
     def password_entered():
-        if compare_digest(st.session_state["password"], os.getenv("PASSWORD")):
+        if compare_digest(st.session_state["password"], settings.PASSWORD):
             st.session_state["password_correct"] = True
             del st.session_state["password"]
         else:
