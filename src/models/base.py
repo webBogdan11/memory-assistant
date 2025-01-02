@@ -1,8 +1,8 @@
 import uuid
 from abc import ABC
 from typing import Type, TypeVar, Generic
-from pydantic import BaseModel, ConfigDict
-from pydantic import Field, UUID4
+from pydantic import UUID4, BaseModel, ConfigDict
+from pydantic import Field
 from datetime import datetime, UTC
 
 
@@ -49,9 +49,7 @@ class NoSQLBaseDocument(BasePydanticModel, Generic[T], ABC):
         if not _id_str:
             raise ValueError("Missing '_id' in the Mongo document.")
 
-        data["id"] = UUID4(_id_str)
-
-        return cls(**data)
+        return cls(**dict(data, id=_id_str))
 
     def to_mongo(self, **kwargs) -> dict:
         """
@@ -66,5 +64,7 @@ class NoSQLBaseDocument(BasePydanticModel, Generic[T], ABC):
         parsed = self.model_dump(
             exclude_unset=exclude_unset, by_alias=by_alias, mode=mode, **kwargs
         )
+        if "_id" in parsed and isinstance(parsed["_id"], uuid.UUID):
+            parsed["_id"] = str(parsed["_id"])
 
         return parsed

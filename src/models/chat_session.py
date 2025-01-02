@@ -1,7 +1,6 @@
 from datetime import datetime
-import uuid
-from typing import List, Literal
-from pydantic import Field
+from typing import List
+from pydantic import Field, UUID4
 from enum import Enum
 from models.base import NoSQLBaseDocument, BasePydanticModel
 
@@ -26,7 +25,7 @@ class ChatMessage(NoSQLBaseDocument):
     Sub-document for messages inside a chat session.
     """
 
-    previous_message_id: uuid.UUID | None = Field(None, alias="previousMessageId")
+    previous_message_id: UUID4 | None = Field(None, alias="previousMessageId")
 
     role: ChatMessageRole
     type: ChatMessageType
@@ -34,7 +33,7 @@ class ChatMessage(NoSQLBaseDocument):
 
     feedback: str | None = None
     score: float | None = None
-    question_id: uuid.UUID | None = Field(None, alias="questionId")
+    question_id: UUID4 | None = Field(None, alias="questionId")
 
 
 class ChatSessionDocument(NoSQLBaseDocument):
@@ -42,10 +41,10 @@ class ChatSessionDocument(NoSQLBaseDocument):
     Represents a chat session in the 'chatSessions' collection.
     """
 
-    user_id: uuid.UUID = Field(..., alias="userId")
-    document_id: uuid.UUID = Field(..., alias="documentId")
+    user_id: UUID4 = Field(..., alias="userId")
+    document_id: UUID4 = Field(..., alias="documentId")
 
-    section_ids: List[uuid.UUID] = Field(default_factory=list, alias="sectionIds")
+    section_ids: List[UUID4] = Field(default_factory=list, alias="sectionIds")
 
     messages: List[ChatMessage] = Field(default_factory=list)
 

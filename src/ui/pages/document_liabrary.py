@@ -11,7 +11,7 @@ if "documents" not in st.session_state:
 
 st.title("Document Library")
 
-DEMO_USER_ID = uuid.UUID("41087127-c14a-478f-bbfb-cfee1a0ca7e3")
+DEMO_USER_ID = uuid.UUID("2ec1eeaf-91e7-46e2-93b2-c7b6f9c9b972")
 book_service = get_book_service()
 
 col_file, col_title = st.columns([0.6, 0.4])

@@ -33,16 +33,16 @@ def main():
     """
 
     document_library_page = st.Page(
-        "ui_pages/document_liabrary.py",
+        "pages/document_liabrary.py",
         title="Document Library",
         default=True,
     )
     document_detail_page = st.Page(
-        "ui_pages/document_detail.py",
+        "pages/document_detail.py",
         title="Document Detail",
     )
     chat_page = st.Page(
-        "ui_pages/chat.py",
+        "pages/chat.py",
         title="Chat",
     )
 

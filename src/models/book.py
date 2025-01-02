@@ -1,5 +1,4 @@
-import uuid
-from pydantic import Field
+from pydantic import Field, UUID4
 from models.base import NoSQLBaseDocument, BasePydanticModel
 
 
@@ -17,7 +16,7 @@ class BookDocument(NoSQLBaseDocument):
     Represents a document in the 'documents' collection.
     """
 
-    user_id: uuid.UUID = Field(..., alias="userId")
+    user_id: UUID4 = Field(..., alias="userId")
 
     title: str
     type: str
