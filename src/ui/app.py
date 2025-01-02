@@ -1,11 +1,10 @@
 import streamlit as st
 from hmac import compare_digest
-from ..config import settings
-
+import os
 
 def check_password():
     def password_entered():
-        if compare_digest(st.session_state["password"], settings.PASSWORD):
+        if compare_digest(st.session_state["password"], os.getenv("PASSWORD")):
             st.session_state["password_correct"] = True
             del st.session_state["password"]
         else:
