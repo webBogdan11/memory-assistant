@@ -1,6 +1,6 @@
 import streamlit as st
 
-from src.services.section_service import get_section_service
+from services.section_service import get_section_service
 
 
 st.title("Document Detail Page")

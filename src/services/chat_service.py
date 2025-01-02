@@ -1,15 +1,15 @@
-from src.llm.llm import determine_message_type, evaluate_answer, generate_explanation
-from src.repositories.chat_session_repo import ChatSessionRepository
-from src.services.book_service import BookService, get_book_service
-from src.services.section_service import SectionService, get_section_service
-from src.models.chat_session import (
+from llm.llm import determine_message_type, evaluate_answer, generate_explanation
+from repositories.chat_session_repo import ChatSessionRepository
+from services.book_service import BookService, get_book_service
+from services.section_service import SectionService, get_section_service
+from models.chat_session import (
     ChatMessage,
     ChatMessageRole,
     ChatMessageType,
     ChatSessionDocument,
     ChatSessionSummary,
 )
-from src.models.section import QuestionItem, SectionDocument
+from models.section import QuestionItem, SectionDocument
 from typing import List
 import uuid
 import random

@@ -6,8 +6,8 @@ from loguru import logger
 from pymongo.collection import Collection
 from pymongo import UpdateOne
 
-from src.models.base import NoSQLBaseDocument
-from src.db.mongo_connection import get_mongo_database
+from models.base import NoSQLBaseDocument
+from db.mongo_connection import get_mongo_database
 
 
 ModelType = TypeVar("ModelType", bound=NoSQLBaseDocument)

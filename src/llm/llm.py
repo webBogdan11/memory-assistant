@@ -2,10 +2,10 @@ from typing import Literal
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel
 from langchain.prompts import PromptTemplate
-from src.config import settings
+from config import settings
 from langsmith import traceable
 
-from src.models.chat_session import ChatMessageType
+from models.chat_session import ChatMessageType
 
 
 class SectionInfo(BaseModel):

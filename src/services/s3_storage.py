@@ -1,5 +1,5 @@
 import uuid
-from src.config import settings
+from config import settings
 
 import boto3
 

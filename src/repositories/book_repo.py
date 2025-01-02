@@ -1,5 +1,5 @@
-from src.models.book import BookDocument
-from src.repositories.base_repo import AbstractRepository
+from models.book import BookDocument
+from repositories.base_repo import AbstractRepository
 
 
 class BookRepository(AbstractRepository[BookDocument]):

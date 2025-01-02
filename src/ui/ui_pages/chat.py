@@ -1,7 +1,7 @@
 import streamlit as st
 
-from src.services.book_service import get_book_service
-from src.services.chat_service import get_chat_service
+from services.book_service import get_book_service
+from services.chat_service import get_chat_service
 
 st.set_page_config(
     page_title="Book Q&A Session", page_icon=":question:", layout="centered"

@@ -1,6 +1,6 @@
 import uuid
 from pydantic import Field
-from src.models.base import NoSQLBaseDocument, BasePydanticModel
+from models.base import NoSQLBaseDocument, BasePydanticModel
 
 
 class BookMetadata(BasePydanticModel):

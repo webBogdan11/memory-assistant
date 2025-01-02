@@ -1,9 +1,9 @@
-from src.models.section import SectionDocument
-from src.repositories.book_repo import BookRepository
-from src.repositories.section_repo import SectionRepository
-from src.services.s3_storage import S3StorageService
+from models.section import SectionDocument
+from repositories.book_repo import BookRepository
+from repositories.section_repo import SectionRepository
+from services.s3_storage import S3StorageService
 import uuid
-from src.models.book import BookDocument, BookMetadata
+from models.book import BookDocument, BookMetadata
 import pypdf
 from io import BytesIO
 

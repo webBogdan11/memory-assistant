@@ -3,7 +3,7 @@ import uuid
 from typing import List, Literal
 from pydantic import Field
 from enum import Enum
-from src.models.base import NoSQLBaseDocument, BasePydanticModel
+from models.base import NoSQLBaseDocument, BasePydanticModel
 
 
 class ChatMessageRole(Enum):

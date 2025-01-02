@@ -1,5 +1,5 @@
-from src.models.section import QuestionItem, SectionDocument
-from src.repositories.base_repo import AbstractRepository
+from models.section import QuestionItem, SectionDocument
+from repositories.base_repo import AbstractRepository
 
 
 class SectionRepository(AbstractRepository[SectionDocument]):

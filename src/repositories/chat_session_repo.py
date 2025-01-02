@@ -1,7 +1,7 @@
-from src.models.chat_session import ChatMessage, ChatSessionDocument, ChatSessionSummary
-from src.models.section import QuestionItem
-from src.repositories.base_repo import AbstractRepository
-from src.services.section_service import SectionService
+from models.chat_session import ChatMessage, ChatSessionDocument, ChatSessionSummary
+from models.section import QuestionItem
+from repositories.base_repo import AbstractRepository
+from services.section_service import SectionService
 from typing import List
 import uuid
 import random

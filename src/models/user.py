@@ -1,6 +1,6 @@
 from pydantic import EmailStr, Field
 
-from src.models.base import NoSQLBaseDocument
+from models.base import NoSQLBaseDocument
 
 
 class UserDocument(NoSQLBaseDocument):

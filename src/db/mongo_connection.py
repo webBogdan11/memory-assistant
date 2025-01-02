@@ -2,7 +2,7 @@ from pymongo import MongoClient
 from pymongo.errors import ConnectionFailure
 from loguru import logger
 
-from src.config import settings
+from config import settings
 
 
 class MongoDatabaseConnector:

@@ -1,5 +1,5 @@
-from src.models.user import UserDocument
-from src.repositories.base_repo import AbstractRepository
+from models.user import UserDocument
+from repositories.base_repo import AbstractRepository
 
 
 class UserRepository(AbstractRepository[UserDocument]):

@@ -1,10 +1,10 @@
 from io import BytesIO
 import pypdf
-from src.repositories.section_repo import SectionRepository
-from src.repositories.book_repo import BookRepository
-from src.services.book_service import BookService, get_book_service
-from src.models.section import QuestionItem, SectionDocument
-from src.llm.llm import (
+from repositories.section_repo import SectionRepository
+from repositories.book_repo import BookRepository
+from services.book_service import BookService, get_book_service
+from models.section import QuestionItem, SectionDocument
+from llm.llm import (
     generate_questions,
     get_section_info,
     SectionInfoList,
