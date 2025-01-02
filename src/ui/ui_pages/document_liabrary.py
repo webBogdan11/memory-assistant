@@ -2,7 +2,7 @@ import streamlit as st
 import uuid
 
 from models.book import BookDocument
-from ervices.book_service import get_book_service
+from services.book_service import get_book_service
 
 st.set_page_config(page_title="Document Library", page_icon=":books:")
 
