@@ -1,3 +1,6 @@
+[tool.setuptools]
+packages = ["src"]
+
 [project]
 name = "ai-assistant"
 version = "0.1.0"
