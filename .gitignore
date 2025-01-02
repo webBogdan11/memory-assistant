@@ -165,3 +165,5 @@ experiments/**
 extracted_images/**
 commands.md
 .DS_Store
+
+.streamlit/secrets.toml
