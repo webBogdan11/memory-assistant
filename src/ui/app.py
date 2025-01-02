@@ -1,6 +1,6 @@
 import streamlit as st
 from hmac import compare_digest
-from config import settings
+from ..config import settings
 
 
 def check_password():
