@@ -2,8 +2,8 @@ import streamlit as st
 import uuid
 from typing import Dict, Any
 
-from models.book import BookDocument
-from services.book_service import get_book_service
+from src.models.book import BookDocument
+from src.services.book_service import get_book_service
 
 st.set_page_config(page_title="Document Library", page_icon=":books:")
 
