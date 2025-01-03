@@ -23,7 +23,7 @@ An AI-powered tool designed to help users **better learn and remember** reading 
    - Edit or remove questions for a more tailored experience.  
 
    **Demo:**  
-   ![Generate context-specific questions](gifs/question_generation.gif)
+   ![Generate context-specific questions](gifs/generation_questions.gif)
 
 3. **Interactive Q&A Chat**  
    - Engage in a chat session that recognizes if your messages are answers, explanations, or off-topic.  
@@ -36,7 +36,7 @@ An AI-powered tool designed to help users **better learn and remember** reading 
    - Receive session summaries showing how well you answered questions and your completion rate.
 
    **Demo:**  
-   ![Session summary](gifs/session_summary.gif)
+   ![Session summary](gifs/answering.gif)
 
 
 ## Purpose & Overview
